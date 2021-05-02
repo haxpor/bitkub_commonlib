@@ -2,6 +2,8 @@
 
 # commonlib
 
+This repository is as part of tool suite [bitkub_crypto_tools](https://github.com/haxpor/bitkub_crypto_tools).
+
 It is aimed to be linked statically (but also possible for shared library) with other tools as those will reuse code in this repository.
 
 The general approach is to
