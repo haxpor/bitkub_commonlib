@@ -1,3 +1,5 @@
+[![donate button](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat)](https://github.com/haxpor/donate)
+
 # commonlib
 
 It is aimed to be linked statically (but also possible for shared library) with other tools as those will reuse code in this repository.
