@@ -6,7 +6,7 @@ OUT = libbitkub.a
 OUT_DIR = bin
 COMPILER = g++
 SRC_DIR = src
-CXXFLAGS_BASE = -g -std=c++17 -Wall -Wextra -pedantic -I.
+CXXFLAGS_BASE = -std=c++17 -Wall -Wextra -pedantic -I.
 SOURCES = $(SRC_DIR)/bitkub_commonlib.o
 
 # We will output object files into src/ directory
@@ -20,7 +20,7 @@ all: static-debug static-release
 static-release: CXXFLAGS_RELEASE = $(CXXFLAGS_BASE) -O2
 static-release: create-output-dirs-release $(OUT_DIR)/release/$(OUT)
 
-static-debug: CXXFLAGS_DEBUG = $(CXXFLAGS_BASE)
+static-debug: CXXFLAGS_DEBUG = -g $(CXXFLAGS_BASE)
 static-debug: create-output-dirs-debug $(OUT_DIR)/debug/$(OUT)
 
 $(OUT_DIR)/release/$(OUT): $(OBJS_RELEASE) $(OUT_DIR) copy-pub-headers-release
